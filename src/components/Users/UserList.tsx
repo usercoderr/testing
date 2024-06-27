@@ -22,7 +22,7 @@ const UserList = () => {
     }, []);
 
     useEffect(() => {
-        fetchUsers();
+        fetchUsers().then(r => r);
     }, []);
 
     if (error) {
